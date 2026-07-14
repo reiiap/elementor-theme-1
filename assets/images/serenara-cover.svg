@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200" role="img" aria-label="Abstract black ivory and gold wedding invitation cover">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#11100e"/><stop offset=".55" stop-color="#090807"/><stop offset="1" stop-color="#21190f"/></linearGradient><radialGradient id="r" cx="50%" cy="38%" r="55%"><stop offset="0" stop-color="#f7f1e8" stop-opacity=".14"/><stop offset="1" stop-color="#090807" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1600" height="2200" fill="url(#g)"/><rect width="1600" height="2200" fill="url(#r)"/>
+  <path d="M154 244 C502 116 1098 116 1446 244" fill="none" stroke="#c6a15b" stroke-opacity=".34" stroke-width="2"/>
+  <path d="M238 1800 C514 1710 1086 1710 1362 1800" fill="none" stroke="#c6a15b" stroke-opacity=".28" stroke-width="2"/>
+  <circle cx="800" cy="1030" r="430" fill="none" stroke="#c6a15b" stroke-opacity=".18" stroke-width="1.5"/>
+  <circle cx="800" cy="1030" r="315" fill="none" stroke="#f7f1e8" stroke-opacity=".08" stroke-width="1"/>
+</svg>
