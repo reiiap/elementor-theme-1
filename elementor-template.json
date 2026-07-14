@@ -1,0 +1,128 @@
+{
+  "version": "0.4",
+  "title": "Serenara Studio — Luxury Wedding Invitation",
+  "type": "page",
+  "content": [
+    {
+      "id": "srn_root",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "title": "Serenara Studio Invitation Template",
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#090807",
+        "padding": { "unit": "rem", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+        "css_classes": "serenara-template",
+        "custom_css": "selector{--srn-black:#090807;--srn-ivory:#f7f1e8;--srn-muted:#c9bfb0;--srn-gold:#c6a15b;--srn-line:rgba(198,161,91,.28);font-family:'Plus Jakarta Sans',sans-serif;color:var(--srn-ivory);scroll-behavior:smooth;} selector h1,selector h2,selector h3,selector .srn-serif{font-family:'Cormorant Garamond',serif;} selector img{height:auto;} selector .srn-card{border:1px solid var(--srn-line);background:linear-gradient(145deg,rgba(247,241,232,.065),rgba(247,241,232,.025));backdrop-filter:blur(10px);} selector .srn-kicker{letter-spacing:.28em;text-transform:uppercase;color:var(--srn-gold);font-size:.72rem;} selector .srn-soft{color:var(--srn-muted);} @media(max-width:767px){selector .elementor-heading-title{word-break:normal;}}"
+      },
+      "elements": [
+        {
+          "id": "loading_screen",
+          "elType": "container",
+          "settings": {
+            "title": "01 Loading Screen",
+            "content_width": "boxed",
+            "min_height": { "unit": "vh", "size": 100 },
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "gap": { "unit": "rem", "size": 1.25 },
+            "padding": { "unit": "rem", "top": "2", "right": "1.25", "bottom": "2", "left": "1.25", "isLinked": false },
+            "css_classes": "srn-loading"
+          },
+          "elements": [
+            { "id": "load_kicker", "elType": "widget", "widgetType": "heading", "settings": { "title": "Serenara Studio", "header_size": "div", "css_classes": "srn-kicker", "_animation": "fadeIn" }, "elements": [] },
+            { "id": "load_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "{{bride_name}} & {{groom_name}}", "header_size": "h1", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 4.25, "sizes": [] }, "typography_font_weight": "500", "typography_line_height": { "unit": "em", "size": 0.92 }, "title_color": "#F7F1E8", "_animation": "zoomIn" }, "elements": [] },
+            { "id": "load_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_audio src=\"{{music}}\"]" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "opening_cover",
+          "elType": "container",
+          "settings": { "title": "02 Opening Cover", "content_width": "full", "min_height": { "unit": "vh", "size": 100 }, "flex_direction": "column", "justify_content": "flex-end", "background_background": "classic", "background_image": { "url": "assets/images/serenara-cover.svg", "id": "" }, "background_position": "center center", "background_size": "cover", "padding": { "unit": "rem", "top": "4", "right": "1.25", "bottom": "3", "left": "1.25", "isLinked": false }, "css_classes": "srn-cover" },
+          "elements": [
+            { "id": "open_panel", "elType": "container", "settings": { "title": "Guest Opening Panel", "content_width": "boxed", "flex_direction": "column", "align_items": "center", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "2", "right": "1.25", "bottom": "2", "left": "1.25", "isLinked": false }, "css_classes": "srn-card" }, "elements": [
+              { "id": "open_to", "elType": "widget", "widgetType": "heading", "settings": { "title": "A private invitation for", "header_size": "div", "css_classes": "srn-kicker", "align": "center" }, "elements": [] },
+              { "id": "guest_name", "elType": "widget", "widgetType": "heading", "settings": { "title": "{{guest_name}}", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3 }, "title_color": "#F7F1E8" }, "elements": [] },
+              { "id": "invite_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_invitation guest=\"{{guest_name}}\"]" }, "elements": [] }
+            ] }
+          ]
+        },
+        {
+          "id": "hero",
+          "elType": "container",
+          "settings": { "title": "03 Hero", "content_width": "boxed", "flex_direction": "column", "align_items": "center", "gap": { "unit": "rem", "size": 1.25 }, "padding": { "unit": "rem", "top": "6", "right": "1.25", "bottom": "6", "left": "1.25", "isLinked": false } },
+          "elements": [
+            { "id": "hero_kicker", "elType": "widget", "widgetType": "heading", "settings": { "title": "The Wedding of", "header_size": "div", "css_classes": "srn-kicker", "align": "center", "_animation": "fadeInUp" }, "elements": [] },
+            { "id": "hero_names", "elType": "widget", "widgetType": "heading", "settings": { "title": "{{bride_name}}<br>&<br>{{groom_name}}", "header_size": "h1", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 6.5 }, "typography_font_size_tablet": { "unit": "rem", "size": 5 }, "typography_font_size_mobile": { "unit": "rem", "size": 4 }, "typography_line_height": { "unit": "em", "size": 0.82 }, "title_color": "#F7F1E8", "_animation": "fadeInUp", "_animation_delay": 120 }, "elements": [] },
+            { "id": "hero_date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>{{event_date}} · {{event_time}}<br><span class=\"srn-soft\">{{venue}}</span></p>", "align": "center", "text_color": "#C9BFB0", "typography_font_family": "Plus Jakarta Sans", "typography_font_size": { "unit": "rem", "size": 0.95 }, "_animation": "fadeIn" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "couple",
+          "elType": "container",
+          "settings": { "title": "04 Bride & Groom", "content_width": "boxed", "flex_direction": "row", "flex_direction_mobile": "column", "gap": { "unit": "rem", "size": 1.5 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } },
+          "elements": [
+            { "id": "bride_card", "elType": "container", "settings": { "title": "Bride Card", "width": { "unit": "%", "size": 50 }, "width_mobile": { "unit": "%", "size": 100 }, "flex_direction": "column", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "1", "right": "1", "bottom": "1.5", "left": "1", "isLinked": false }, "css_classes": "srn-card" }, "elements": [
+              { "id": "bride_img", "elType": "widget", "widgetType": "image", "settings": { "image": { "url": "assets/images/bride-placeholder.svg", "id": "" }, "image_loading": "lazy", "image_size": "full", "_animation": "fadeIn" }, "elements": [] },
+              { "id": "bride_name", "elType": "widget", "widgetType": "heading", "settings": { "title": "{{bride_name}}", "header_size": "h2", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3 }, "title_color": "#F7F1E8" }, "elements": [] }
+            ] },
+            { "id": "groom_card", "elType": "container", "settings": { "title": "Groom Card", "width": { "unit": "%", "size": 50 }, "width_mobile": { "unit": "%", "size": 100 }, "flex_direction": "column", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "1", "right": "1", "bottom": "1.5", "left": "1", "isLinked": false }, "css_classes": "srn-card" }, "elements": [
+              { "id": "groom_img", "elType": "widget", "widgetType": "image", "settings": { "image": { "url": "assets/images/groom-placeholder.svg", "id": "" }, "image_loading": "lazy", "image_size": "full", "_animation": "fadeIn" }, "elements": [] },
+              { "id": "groom_name", "elType": "widget", "widgetType": "heading", "settings": { "title": "{{groom_name}}", "header_size": "h2", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3 }, "title_color": "#F7F1E8" }, "elements": [] }
+            ] }
+          ]
+        },
+        {
+          "id": "countdown",
+          "elType": "container",
+          "settings": { "title": "05 Countdown", "content_width": "boxed", "flex_direction": "column", "align_items": "center", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false }, "css_classes": "srn-card" },
+          "elements": [
+            { "id": "count_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Counting the moments", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3.25 }, "title_color": "#F7F1E8" }, "elements": [] },
+            { "id": "count_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_countdown date=\"{{event_date}}\" time=\"{{event_time}}\"]" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "event_info",
+          "elType": "container",
+          "settings": { "title": "06 Event Information", "content_width": "boxed", "flex_direction": "column", "gap": { "unit": "rem", "size": 1.25 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "3", "left": "1.25", "isLinked": false } },
+          "elements": [
+            { "id": "event_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Ceremony & Reception", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3.5 }, "title_color": "#F7F1E8" }, "elements": [] },
+            { "id": "event_details", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p><strong>{{event_date}}</strong><br>{{event_time}}<br>{{venue}}</p>", "align": "center", "text_color": "#C9BFB0", "typography_font_size": { "unit": "rem", "size": 1 } }, "elements": [] },
+            { "id": "qr_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_qrcode]" }, "elements": [] }
+          ]
+        },
+        { "id": "maps", "elType": "container", "settings": { "title": "07 Google Maps", "content_width": "boxed", "padding": { "unit": "rem", "top": "2", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } }, "elements": [ { "id": "maps_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_maps address=\"{{maps}}\"]" }, "elements": [] } ] },
+        { "id": "story", "elType": "container", "settings": { "title": "08 Love Story Timeline", "content_width": "boxed", "flex_direction": "column", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } }, "elements": [
+          { "id": "story_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Our Story", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3.5 }, "title_color": "#F7F1E8" }, "elements": [] },
+          { "id": "story_text", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p><span class=\"srn-kicker\">Chapter One</span><br>A quiet beginning, a shared table, and a conversation that felt like home.</p><p><span class=\"srn-kicker\">Chapter Two</span><br>Journeys, seasons, and promises shaped a love made with intention.</p><p><span class=\"srn-kicker\">Chapter Three</span><br>Now we gather with our dearest people to celebrate the next chapter.</p>", "text_color": "#C9BFB0", "typography_font_size": { "unit": "rem", "size": 1 }, "_animation": "fadeInUp" }, "elements": [] }
+        ] },
+        { "id": "gallery", "elType": "container", "settings": { "title": "09 Gallery", "content_width": "boxed", "flex_direction": "column", "gap": { "unit": "rem", "size": 1.25 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } }, "elements": [
+          { "id": "gallery_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Editorial Gallery", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3.5 }, "title_color": "#F7F1E8" }, "elements": [] },
+          { "id": "gallery_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "{{gallery}}" }, "elements": [] }
+        ] },
+        { "id": "video", "elType": "container", "settings": { "title": "10 Video", "content_width": "boxed", "flex_direction": "column", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } }, "elements": [ { "id": "video_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "A Film Note", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3.5 }, "title_color": "#F7F1E8" }, "elements": [] }, { "id": "video_widget", "elType": "widget", "widgetType": "video", "settings": { "video_type": "hosted", "hosted_url": { "url": "{{video}}" }, "lazy_load": "yes", "_animation": "fadeIn" }, "elements": [] } ] },
+        { "id": "stream_gift", "elType": "container", "settings": { "title": "11 Live Streaming + 12 Wedding Gift", "content_width": "boxed", "flex_direction": "row", "flex_direction_mobile": "column", "gap": { "unit": "rem", "size": 1.25 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } }, "elements": [
+          { "id": "stream_card", "elType": "container", "settings": { "title": "Live Streaming", "width": { "unit": "%", "size": 50 }, "width_mobile": { "unit": "%", "size": 100 }, "flex_direction": "column", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "2", "right": "1.25", "bottom": "2", "left": "1.25", "isLinked": false }, "css_classes": "srn-card" }, "elements": [ { "id": "stream_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Live Streaming", "header_size": "h2", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 2.6 }, "title_color": "#F7F1E8" }, "elements": [] }, { "id": "stream_text", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Join the celebration from wherever you are.</p>", "text_color": "#C9BFB0" }, "elements": [] }, { "id": "stream_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "{{live_streaming}}" }, "elements": [] } ] },
+          { "id": "gift_card", "elType": "container", "settings": { "title": "Wedding Gift", "width": { "unit": "%", "size": 50 }, "width_mobile": { "unit": "%", "size": 100 }, "flex_direction": "column", "gap": { "unit": "rem", "size": 1 }, "padding": { "unit": "rem", "top": "2", "right": "1.25", "bottom": "2", "left": "1.25", "isLinked": false }, "css_classes": "srn-card" }, "elements": [ { "id": "gift_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Wedding Gift", "header_size": "h2", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 2.6 }, "title_color": "#F7F1E8" }, "elements": [] }, { "id": "gift_text", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Your presence and prayers are the most meaningful gift.</p>", "text_color": "#C9BFB0" }, "elements": [] }, { "id": "gift_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_gift data=\"{{gift}}\"]" }, "elements": [] } ] }
+        ] },
+        { "id": "rsvp_guestbook", "elType": "container", "settings": { "title": "13 RSVP + 14 Guest Book", "content_width": "boxed", "flex_direction": "column", "gap": { "unit": "rem", "size": 1.25 }, "padding": { "unit": "rem", "top": "5", "right": "1.25", "bottom": "5", "left": "1.25", "isLinked": false } }, "elements": [
+          { "id": "rsvp_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Kindly Respond", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3.5 }, "title_color": "#F7F1E8" }, "elements": [] },
+          { "id": "rsvp_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_rsvp form=\"{{rsvp}}\"]" }, "elements": [] },
+          { "id": "guestbook_title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Guest Book", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 3 }, "title_color": "#F7F1E8" }, "elements": [] },
+          { "id": "guestbook_shortcode", "elType": "widget", "widgetType": "shortcode", "settings": { "shortcode": "[weddingpress_guestbook]" }, "elements": [] }
+        ] },
+        { "id": "footer", "elType": "container", "settings": { "title": "15 Footer", "content_width": "boxed", "flex_direction": "column", "align_items": "center", "gap": { "unit": "rem", "size": 0.75 }, "padding": { "unit": "rem", "top": "4", "right": "1.25", "bottom": "4", "left": "1.25", "isLinked": false } }, "elements": [
+          { "id": "footer_names", "elType": "widget", "widgetType": "heading", "settings": { "title": "{{bride_name}} & {{groom_name}}", "header_size": "h2", "align": "center", "typography_font_family": "Cormorant Garamond", "typography_font_size": { "unit": "rem", "size": 2.8 }, "title_color": "#F7F1E8" }, "elements": [] },
+          { "id": "footer_credit", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Designed for Serenara Studio · {{event_date}}</p>", "align": "center", "text_color": "#C9BFB0", "typography_font_size": { "unit": "rem", "size": 0.82 } }, "elements": [] }
+        ] }
+      ]
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "custom_css": "body{background:#090807;}"
+  }
+}
